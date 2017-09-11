@@ -1,0 +1,94 @@
+.f-l {
+  float: left;
+}
+.f-r {
+  float: right;
+}
+.o-h {
+  overflow: hidden;
+}
+.mr12 {
+  margin-right: 12px;
+}
+.overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.clearfix:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  /* 触发 hasLayout */
+  zoom: 1;
+}
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+.lazy {
+  background: url(../images/sprite/loading.gif) no-repeat center center;
+}
+.over {
+  background: none;
+}
+.content .main img {
+  display: block;
+  margin: 20px auto;
+}
+.content .main p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  text-indent: 28px;
+}
+.content .connect {
+  padding-bottom: 45px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.content .connect .us {
+  padding-left: 15px;
+  margin-bottom: 20px;
+  width: 85px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #ffffff;
+  background: #6996e9;
+}
+.content .connect .tel p {
+  display: inline-block;
+  margin-right: 35px;
+  font-size: 14px;
+}
+.content .connect .tel p span {
+  margin-right: 5px;
+  display: inline-block;
+  width: 50px;
+  height: 22px;
+  line-height: 22px;
+  padding-right: 5px;
+  color: #ffffff;
+  text-align: right;
+  background: #d897eb;
+}
+.content .connect .tel p:first-child span {
+  background: #f9999a;
+}
+.content .connect .address {
+  margin-top: 20px;
+  font-size: 14px;
+}
+.advplace-title {
+  padding-left: 50px;
+  font-size: 22px;
+  height: 50px;
+  line-height: 50px;
+  margin: 20px 0 7px;
+  font-weight: normal;
+  background: url(../images/sprite/sm_logo.png) no-repeat;
+}

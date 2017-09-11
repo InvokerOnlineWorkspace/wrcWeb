@@ -1,0 +1,113 @@
+.f-l {
+  float: left;
+}
+.f-r {
+  float: right;
+}
+.o-h {
+  overflow: hidden;
+}
+.mr12 {
+  margin-right: 12px;
+}
+.overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.clearfix:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  /* 触发 hasLayout */
+  zoom: 1;
+}
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+.lazy {
+  background: url(../images/sprite/loading.gif) no-repeat center center;
+}
+.over {
+  background: none;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  text-align: center;
+  overflow: hidden;
+}
+.banner img {
+  position: absolute;
+  margin-left: -960px;
+  top: 0;
+  left: 50%;
+}
+.content .main {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px dashed #e0e0e0;
+}
+.content .main .shoplist {
+  float: left;
+  width: 320px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.content .main .shoplist .img {
+  width: 100%;
+  height: 199px;
+}
+.content .main .shoplist .img img {
+  width: 100%;
+  height: 100%;
+}
+.content .main .shoplist h2 {
+  color: #888;
+  font-size: 16px;
+  line-height: 40px;
+}
+.content .main .shoplist h2 span {
+  color: #11a1fb;
+}
+.content .main .shoplist p {
+  font-size: 14px;
+  color: #888;
+  line-height: 24px;
+  height: 48px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.content .main .shoplist .price {
+  overflow: hidden;
+  line-height: 25px;
+  margin-top: 10px;
+}
+.content .main .shoplist .price span {
+  float: left;
+  color: #ff8518;
+  font-size: 18px;
+}
+.content .main .shoplist .price a {
+  float: right;
+  display: inline-block;
+  width: 87px;
+  height: 25px;
+  background: #6b96ea;
+  color: #ffffff;
+  text-align: center;
+  line-height: 25px;
+  font-size: 14px;
+}
+.content .main .shoplist:nth-child(3n+1) {
+  margin-left: 0;
+}

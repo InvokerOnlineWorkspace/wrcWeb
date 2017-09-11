@@ -1,0 +1,149 @@
+.f-l {
+  float: left;
+}
+.f-r {
+  float: right;
+}
+.o-h {
+  overflow: hidden;
+}
+.mr12 {
+  margin-right: 12px;
+}
+.overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.clearfix:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  /* 触发 hasLayout */
+  zoom: 1;
+}
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+.lazy {
+  background: url(../images/sprite/loading.gif) no-repeat center center;
+}
+.over {
+  background: none;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  text-align: center;
+  overflow: hidden;
+}
+.banner img {
+  position: absolute;
+  margin-left: -960px;
+  top: 0;
+  left: 50%;
+}
+.intro {
+  background: #e7edef;
+  height: 325px;
+}
+.intro .nav {
+  padding: 35px 0 35px 130px;
+}
+.intro .nav li {
+  position: relative;
+  margin-right: 70px;
+  display: inline-block;
+  width: 350px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 30px;
+  color: #0262ae;
+  text-align: center;
+  background: #ffffff;
+}
+.intro .nav .on:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 50%;
+  margin-left: -10px;
+  bottom: -35px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 20px solid #ffffff;
+}
+.intro .nav .play {
+  background: #ffffff url(../images/sprite/bg_1.png) no-repeat 30px center;
+}
+.intro .nav .private {
+  background: #ffffff url(../images/sprite/bg_2.png) no-repeat 15px center;
+}
+.intro .p {
+  display: none;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 4px;
+}
+.intro .p p {
+  text-indent: 28px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #666666;
+}
+.intro .on {
+  display: block;
+}
+.boat .free-main {
+  overflow: hidden;
+}
+.boat .free-main .free-list {
+  float: left;
+  margin-bottom: 20px;
+  width: 320px;
+  background: #f8f8f8;
+  color: #000000;
+  margin-left: 20px;
+}
+.boat .free-main .free-list:nth-child(3n+1) {
+  margin-left: 0;
+}
+.boat .free-main .free-list img {
+  width: 320px;
+  height: 258px;
+}
+.boat .free-main .free-list h2 {
+  font-size: 16px;
+  padding: 12px 15px 7px;
+}
+.boat .free-main .free-list p {
+  padding: 0 15px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #888888;
+}
+.boat .free-main .free-list .price {
+  margin-bottom: 10px;
+}
+.boat .free-main .free-list a {
+  margin: 15px;
+  display: block;
+  text-align: center;
+  background: #49a4d8;
+  color: #ffffff;
+  line-height: 30px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.page-nav {
+  margin-bottom: 20px;
+  border-bottom: none;
+}

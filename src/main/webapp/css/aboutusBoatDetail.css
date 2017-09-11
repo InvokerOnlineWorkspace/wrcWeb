@@ -1,0 +1,69 @@
+.main {
+  overflow: hidden;
+  background: #f8f8f8;
+}
+.main .f-l {
+  width: 590px;
+  background: #ffffff;
+}
+.main .f-l .showImg {
+  width: inherit;
+  height: 370px;
+}
+.main .f-l .imgList {
+  overflow: hidden;
+}
+.main .f-l .imgList li {
+  width: 110px;
+  height: 68px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.main .f-l .imgList li:nth-child(5n+1) {
+  margin-left: 0;
+}
+.main .f-l .imgList li img {
+  width: 100%;
+  height: 100%;
+}
+.main .f-r {
+  width: 360px;
+  height: 100%;
+  padding: 25px;
+}
+.main .f-r h2 {
+  font-size: 18px;
+}
+.main .f-r p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #888;
+}
+.main .f-r .price {
+  margin: 10px 0;
+}
+.main .f-r .cir {
+  margin: 37px auto;
+  margin-top: 70px;
+  background: #b5d8ec;
+  color: #0262ae;
+  border-radius: 100%;
+  width: 125px;
+  height: 125px;
+  font-size: 18px;
+  line-height: 125px;
+  text-align: center;
+}
+.main .f-r a {
+  display: block;
+  margin: 0 auto;
+  width: 290px;
+  height: 30px;
+  line-height: 30px;
+  background: #49a4d8;
+  color: #ffffff;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
+}

@@ -1,0 +1,123 @@
+.f-l {
+  float: left;
+}
+.f-r {
+  float: right;
+}
+.o-h {
+  overflow: hidden;
+}
+.mr12 {
+  margin-right: 12px;
+}
+.overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.clearfix:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  /* 触发 hasLayout */
+  zoom: 1;
+}
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+.lazy {
+  background: url(../images/sprite/loading.gif) no-repeat center center;
+}
+.over {
+  background: none;
+}
+.title ul li {
+  margin: 0 5px;
+  padding: 7px 15px;
+  width: auto;
+  font-size: 14px;
+  line-height: 14px;
+  height: auto;
+}
+.content {
+  padding-bottom: 5px;
+}
+.content .main {
+  overflow: hidden;
+  padding-top: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.content .main .qalist {
+  border-top: 1px solid #e0e0e0;
+  padding: 20px 0;
+  background-color: #fff;
+  cursor: pointer;
+}
+.content .main .qalist .question {
+  padding-left: 40px;
+  background: url(../images/sprite/n-q.png) no-repeat 10px 0;
+}
+.content .main .qalist .question h2 {
+  font-size: 14px;
+  line-height: 27px;
+}
+.content .main .qalist .question ul {
+  display: none;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.content .main .qalist .question ul li {
+  height: 20px;
+  line-height: 20px;
+  float: left;
+  padding: 0 10px;
+  color: #fff;
+  margin-right: 3px;
+}
+.content .main .qalist .question ul li:nth-child(4n + 1) {
+  background: #f99a9a;
+}
+.content .main .qalist .question ul li:nth-child(4n + 2) {
+  background: #d797e7;
+}
+.content .main .qalist .question ul li:nth-child(4n + 3) {
+  background: #664fb9;
+}
+.content .main .qalist .question ul li:nth-child(4n + 4) {
+  background: #00955d;
+}
+.content .main .qalist .answer {
+  display: none;
+  background: url(../images/sprite/a.png) no-repeat 10px 0;
+  margin-top: 20px;
+  padding-left: 40px;
+}
+.content .main .qalist .answer p {
+  font-size: 14px;
+  line-height: 24px;
+}
+.content .main .open {
+  background-color: #f2f6f7;
+}
+.content .main .open .question {
+  background: url(../images/sprite/q.png) no-repeat 10px 0;
+}
+.content .main .open .question h2 {
+  cursor: auto;
+}
+.content .main .open .question ul {
+  display: block;
+}
+.content .main .open .answer {
+  display: block;
+}
+.page-nav {
+  background: #f2f6f7;
+  padding-right: 15px;
+  padding-left: 15px;
+}

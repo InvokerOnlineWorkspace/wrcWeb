@@ -1,0 +1,146 @@
+.f-l {
+  float: left;
+}
+.f-r {
+  float: right;
+}
+.o-h {
+  overflow: hidden;
+}
+.mr12 {
+  margin-right: 12px;
+}
+.overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.clearfix:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  /* 触发 hasLayout */
+  zoom: 1;
+}
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+.lazy {
+  background: url(../images/sprite/loading.gif) no-repeat center center;
+}
+.over {
+  background: none;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  text-align: center;
+  overflow: hidden;
+}
+.banner img {
+  position: absolute;
+  margin-left: -960px;
+  top: 0;
+  left: 50%;
+}
+.sharelist {
+  float: left;
+  width: 320px;
+  margin-bottom: 20px;
+}
+.sharelist img {
+  height: 199px;
+  width: 100%;
+}
+.sharelist h2 {
+  font-weight: bold;
+  font-size: 16px;
+  color: #666666;
+  line-height: 40px;
+}
+.sharelist p {
+  font-size: 14px;
+  color: #888888;
+  line-height: 22px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+.sharelist .label {
+  margin-top: 20px;
+  overflow: hidden;
+}
+.sharelist .label li {
+  float: left;
+  color: #ffffff;
+  padding: 5px 18px;
+  font-size: 14px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.sharelist .label li:nth-child(4n + 1) {
+  background: #8e5971;
+}
+.sharelist .label li:nth-child(4n + 2) {
+  background: #3f9ab1;
+}
+.sharelist .label li:nth-child(4n + 3) {
+  background: #664fb9;
+}
+.sharelist .label li:nth-child(4n + 4) {
+  background: #01955e;
+}
+.sharelist:nth-child(3n+1) {
+  margin-left: 0;
+}
+.collect {
+  overflow: hidden;
+}
+.collect dl dt {
+  font-size: 24px;
+  color: #4e7cd8;
+}
+.collect dl dd {
+  font-size: 12px;
+  color: #666666;
+}
+.collect .f-r {
+  margin-right: 30px;
+  width: 40px;
+  height: 47px;
+  position: relative;
+}
+.collect .f-r span {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.collect .collection {
+  background: url(../images/sprite/collect.png) no-repeat center 0;
+}
+.collect .share {
+  background: url(../images/sprite/share.png) no-repeat center 0;
+}
+.pinterest-wrap {
+  overflow: hidden;
+  margin-top: 20px;
+}
+.pinterest-wrap .listWrap {
+  width: 320px;
+  float: left;
+  margin-left: 20px;
+}
+.pinterest-wrap .listWrap:first-child {
+  margin-left: 0;
+}

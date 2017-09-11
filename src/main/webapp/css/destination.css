@@ -1,0 +1,208 @@
+.f-l {
+  float: left;
+}
+.f-r {
+  float: right;
+}
+.o-h {
+  overflow: hidden;
+}
+.mr12 {
+  margin-right: 12px;
+}
+.overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.clearfix:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  /* 触发 hasLayout */
+  zoom: 1;
+}
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+.lazy {
+  background: url(../images/sprite/loading.gif) no-repeat center center;
+}
+.over {
+  background: none;
+}
+.banner {
+  background-color: #d7ecf1;
+  text-align: center;
+  position: relative;
+}
+.banner .site {
+  position: relative;
+  top: -559px;
+}
+.banner .site li {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: url(../images/sprite/site.png) no-repeat;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+.banner .site li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.banner .site li a .dom-title {
+  position: absolute;
+  left: 50%;
+  margin-left: -62px;
+  width: 100px;
+  top: -34px;
+}
+.banner .site li a .dom-title h2 {
+  position: relative;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #ffffff;
+  z-index: 1;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.banner .site li a .dom-title h2:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  display: block;
+  background: #000000;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: alpha(opacity=50);
+  /* IE */
+  -moz-opacity: 0.5;
+  /* 老版Mozilla */
+  -khtml-opacity: 0.5;
+  /* 老版Safari */
+  opacity: 0.5;
+  /* 支持opacity的浏览器*/
+}
+.content {
+  height: 680px;
+}
+.content .swiper-slide {
+  position: relative;
+  cursor: auto;
+}
+.content .main {
+  position: relative;
+  padding: 0 30px;
+  margin-left: 10%;
+  margin-top: 45px;
+  width: 280px;
+  z-index: 999;
+  color: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.content .main:before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  filter: alpha(opacity=50);
+  /* IE */
+  -moz-opacity: 0.5;
+  /* 老版Mozilla */
+  -khtml-opacity: 0.5;
+  /* 老版Safari */
+  opacity: 0.5;
+  /* 支持opacity的浏览器*/
+  z-index: -1;
+}
+.content .main h2 {
+  text-align: center;
+  line-height: 60px;
+  font-size: 22px;
+}
+.content .main p {
+  padding-bottom: 20px;
+  line-height: 24px;
+  font-size: 14px;
+  text-indent: 28px;
+  border-bottom: 1px dashed #ffffff;
+}
+.content .main .heart {
+  padding-left: 30px;
+}
+.content .main .heart .heartList {
+  margin-top: 20px;
+  overflow: hidden;
+}
+.content .main .heart span {
+  float: left;
+  display: inline-block;
+  width: 65px;
+  text-align: right;
+  margin-right: 25px;
+  font-size: 14px;
+  line-height: 14px;
+}
+.content .main .heart ul {
+  float: left;
+  display: inline-block;
+  overflow: hidden;
+}
+.content .main .heart ul li {
+  margin-right: 10px;
+  float: left;
+  width: 16px;
+  height: 14px;
+}
+.content .main .heart ul li:before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 14px;
+  left: 0;
+  top: 0;
+  background: url(../images/sprite/heart.png) no-repeat;
+}
+.content .main .heart ul .half:before {
+  width: 8px;
+}
+.content .main .more {
+  display: block;
+  color: #ffffff;
+  font-size: 16px;
+  width: 120px;
+  height: 38px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 38px;
+  margin: 60px auto;
+  cursor: pointer;
+}
+.page-banner {
+  position: relative;
+  height: 50px;
+}
+.page-banner .pagination {
+  top: 12px;
+}
+.page-banner .pagination .swiper-pagination-switch {
+  background-color: #00b7ee;
+}

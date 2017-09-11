@@ -1,0 +1,116 @@
+.f-l {
+  float: left;
+}
+.f-r {
+  float: right;
+}
+.o-h {
+  overflow: hidden;
+}
+.mr12 {
+  margin-right: 12px;
+}
+.overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.clearfix:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  /* 触发 hasLayout */
+  zoom: 1;
+}
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+.lazy {
+  background: url(../images/sprite/loading.gif) no-repeat center center;
+}
+.over {
+  background: none;
+}
+.banner {
+  height: 726px;
+}
+.banner .swiper-slide {
+  width: 100%;
+}
+.banner .swiper-slide:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  bottom: 0;
+  left: 0;
+  background: #000000;
+  filter: alpha(opacity=15);
+  /* IE */
+  -moz-opacity: 0.15;
+  /* 老版Mozilla */
+  -khtml-opacity: 0.15;
+  /* 老版Safari */
+  opacity: 0.15;
+  /* 支持opacity的浏览器*/
+  z-index: 0;
+}
+.banner .swiper-slide .wrap {
+  position: relative;
+}
+.banner .swiper-slide p {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  text-align: left;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  z-index: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.banner .wrap {
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  margin-left: -500px;
+  top: 0;
+}
+.banner .wrap .button {
+  position: relative;
+  height: 100%;
+}
+.banner .swiper-button-prev,
+.banner .swiper-button-next {
+  position: absolute;
+  width: 32px;
+  height: 70px;
+  top: 50%;
+  margin-top: -35px;
+  z-index: 999;
+}
+.banner .swiper-button-prev {
+  left: -70px;
+  background: url(../images/sprite/page_l.png) no-repeat center center;
+}
+.banner .swiper-button-next {
+  right: -70px;
+  background: url(../images/sprite/page_r.png) no-repeat center center;
+}
+.advplace-title {
+  height: 70px;
+  line-height: 70px;
+  font-size: 24px;
+  margin: 0;
+  background: url(../images/sprite/dif.png) no-repeat left center;
+}

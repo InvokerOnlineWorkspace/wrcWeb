@@ -1,0 +1,207 @@
+.f-l {
+  float: left;
+}
+.f-r {
+  float: right;
+}
+.o-h {
+  overflow: hidden;
+}
+.mr12 {
+  margin-right: 12px;
+}
+.overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.clearfix:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  /* 触发 hasLayout */
+  zoom: 1;
+}
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+.lazy {
+  background: url(../images/sprite/loading.gif) no-repeat center center;
+}
+.over {
+  background: none;
+}
+.banner {
+  width: 100%;
+  max-width: 1920px;
+  height: 380px;
+}
+.banner a {
+  display: block;
+  height: 380px;
+}
+.content .content-title {
+  padding: 20px 0 10px;
+  overflow: hidden;
+}
+.content .content-title li {
+  float: left;
+  height: 70px;
+  width: 160px;
+  cursor: pointer;
+}
+.content .content-title .bg1 {
+  background: url(../images/sprite/01.png) no-repeat center center;
+}
+.content .content-title .bg1:hover,
+.content .content-title .bg1.on {
+  background: url(../images/sprite/01_bg.png) no-repeat center center;
+}
+.content .content-title .bg2 {
+  background: url(../images/sprite/02.png) no-repeat center center;
+}
+.content .content-title .bg2:hover,
+.content .content-title .bg2.on {
+  background: url(../images/sprite/02_bg.png) no-repeat center center;
+}
+.content .content-title .bg3 {
+  background: url(../images/sprite/03.png) no-repeat center center;
+}
+.content .content-title .bg3:hover,
+.content .content-title .bg3.on {
+  background: url(../images/sprite/03_bg.png) no-repeat center center;
+}
+.content .content-title .bg4 {
+  background: url(../images/sprite/04.png) no-repeat center center;
+}
+.content .content-title .bg4:hover,
+.content .content-title .bg4.on {
+  background: url(../images/sprite/04_bg.png) no-repeat center center;
+}
+.content .content-title .bg5 {
+  background: url(../images/sprite/05.png) no-repeat center center;
+}
+.content .content-title .bg5:hover,
+.content .content-title .bg5.on {
+  background: url(../images/sprite/05_bg.png) no-repeat center center;
+}
+.content .content-title .bg6 {
+  background: url(../images/sprite/06.png) no-repeat center center;
+}
+.content .content-title .bg6:hover,
+.content .content-title .bg6.on {
+  background: url(../images/sprite/06_bg.png) no-repeat center center;
+}
+.content .label {
+  overflow: hidden;
+}
+.content .label li {
+  float: left;
+  padding: 5px 15px;
+  background: #e6ddd1;
+  margin-left: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.content .label .on {
+  background: #ffa82b;
+  color: #ffffff;
+}
+.content .free {
+  margin-top: 20px;
+  border-bottom: 1px dashed #e0e0e0;
+}
+.content .free .free-main {
+  overflow: hidden;
+}
+.content .free .free-main .free-list {
+  position: relative;
+  display: block;
+  float: left;
+  padding-bottom: 10px;
+  width: 320px;
+  background: #fff;
+  color: #000000;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.content .free .free-main .free-list:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background: url() no-repeat;
+}
+.content .free .free-main .free-list:nth-child(3n+1) {
+  margin-left: 0;
+}
+.content .free .free-main .free-list img {
+  width: 320px;
+  height: 258px;
+}
+.content .free .free-main .free-list p {
+  margin: 10px;
+  font-size: 14px;
+  line-height: 22px;
+}
+.content .free .free-main .free-list .price {
+  margin: 0 10px;
+  font-size: 14px;
+  height: 35px;
+  line-height: 35px;
+  overflow: hidden;
+}
+.content .free .free-main .free-list .price span {
+  float: left;
+}
+.content .free .free-main .free-list .price ul {
+  float: right;
+  overflow: hidden;
+}
+.content .free .free-main .free-list .price ul li {
+  margin-left: 10px;
+  float: left;
+  width: 35px;
+  height: 35px;
+}
+.content .free .free-main .free-list .chuanpiao {
+  background: url(../images/sprite/chuanpiao.png) no-repeat center right;
+}
+.content .free .free-main .free-list .chuanpiao2 {
+  background: url(../images/sprite/chuanpiao2.png) no-repeat center right;
+}
+.content .free .free-main .free-list .chuanpiao3 {
+  background: url(../images/sprite/chuanpiao3.png) no-repeat center right;
+}
+.content .free .free-main .free-list .chuanpiao4 {
+  background: url(../images/sprite/chuanpiao4.png) no-repeat center right;
+}
+.content .free .free-main .free-list .chuanpiao5 {
+  background: url(../images/sprite/chuanpiao5.png) no-repeat center right;
+}
+.content .free .free-main .free-list .plane {
+  background: url(../images/sprite/feijipiao.png) no-repeat center right;
+}
+.content .free .free-main .free-list .plane2 {
+  background: url(../images/sprite/feijipiao2.png) no-repeat center right;
+}
+.content .free .free-main .free-list .plane3 {
+  background: url(../images/sprite/feijipiao3.png) no-repeat center right;
+}
+.content .free .free-main .free-list .plane4 {
+  background: url(../images/sprite/feijipiao4.png) no-repeat center right;
+}
+.content .free .free-main .free-list .plane5 {
+  background: url(../images/sprite/feijipiao5.png) no-repeat center right;
+}
+.page-nav {
+  margin-bottom: 20px;
+  border-bottom: 0;
+}
