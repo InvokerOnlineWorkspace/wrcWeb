@@ -22,7 +22,7 @@ var destinationDetail = {
       paginationClickable :true,
     });
     $(".swiper-pagination-switch").each(function(i,item){
-      item.innerHTML = i
+      item.innerHTML = i+1
     })
     $(".swiper-slide").click(function(){
       $(this).addClass("on").siblings().removeClass("on");

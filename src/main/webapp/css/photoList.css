@@ -1,0 +1,192 @@
+.f-l {
+  float: left;
+}
+.f-r {
+  float: right;
+}
+.o-h {
+  overflow: hidden;
+}
+.mr12 {
+  margin-right: 12px;
+}
+.overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.clearfix:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  /* 触发 hasLayout */
+  zoom: 1;
+}
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+.lazy {
+  background: url(../images/sprite/loading.gif) no-repeat center center;
+}
+.over {
+  background: none;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  text-align: center;
+  overflow: hidden;
+}
+.banner img {
+  position: absolute;
+  margin-left: -960px;
+  top: 0;
+  left: 50%;
+}
+.content .main {
+  overflow: hidden;
+  padding: 20px 0;
+}
+.content .main .sharelist {
+  float: left;
+  width: 320px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.content .main .sharelist img {
+  height: 199px;
+  width: 100%;
+}
+.content .main .sharelist h2 {
+  font-weight: bold;
+  font-size: 16px;
+  color: #666666;
+  line-height: 40px;
+}
+.content .main .sharelist p {
+  font-size: 14px;
+  color: #888888;
+  line-height: 22px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+.content .main .sharelist .label {
+  margin-top: 20px;
+  overflow: hidden;
+}
+.content .main .sharelist .label li {
+  float: left;
+  color: #ffffff;
+  padding: 5px 18px;
+  font-size: 14px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.content .main .sharelist:nth-child(3n+1) {
+  margin-left: 0;
+}
+.content .main .collect {
+  overflow: hidden;
+}
+.content .main .collect dl dt {
+  font-size: 24px;
+  color: #4e7cd8;
+}
+.content .main .collect dl dd {
+  font-size: 12px;
+  color: #666666;
+}
+.content .main .collect .f-r {
+  margin-right: 30px;
+  width: 40px;
+  height: 47px;
+  position: relative;
+}
+.content .main .collect .f-r span {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.content .main .collect .collection {
+  background: url(../images/sprite/collect.png) no-repeat center 0;
+}
+.content .main .collect .share {
+  background: url(../images/sprite/share.png) no-repeat center 0;
+}
+.photoWrap {
+  display: none;
+  position: fixed;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  z-index: 999;
+}
+.photoWrap .wrap {
+  position: relative;
+  top: 50%;
+  margin-top: -340px;
+  padding: 20px;
+  background: #000;
+}
+.photoWrap .wrap .swiper-button-next,
+.photoWrap .wrap .swiper-button-prev {
+  z-index: 999;
+  height: 155px;
+  bottom: 0;
+  top: auto;
+}
+.photoWrap .wrap .swiper-button-prev {
+  background: url(../images/sprite/page_l.png) no-repeat center center;
+}
+.photoWrap .wrap .swiper-button-next {
+  background: url(../images/sprite/page_r.png) no-repeat center center;
+}
+.photoWrap .wrap .cancle {
+  position: absolute;
+  right: -16px;
+  top: -16px;
+  width: 32px;
+  height: 32px;
+  background: url(../images/sprite/cancle.png) no-repeat center center;
+  cursor: pointer;
+}
+.photoWrap .showImg {
+  width: 1000px;
+  height: 500px;
+}
+.photoWrap .showImg img {
+  width: 100%;
+  height: 100%;
+}
+.photoList {
+  margin-top: 20px;
+  height: 120px;
+}
+.photoList .swiper-slide {
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.photoList .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #000;
+  box-sizing: border-box;
+}
+.photoList .on img {
+  border: 2px solid #ddd;
+}
