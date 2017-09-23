@@ -16,8 +16,9 @@ var index = {
 	init: function(){
     this.banner();
     this.top();
+    this.photoList();
   },
-  top: function(){
+  top: function(){//顶部
     window.onscroll = function(param){
       var top = $(".top");
       if($(document).scrollTop() <= 800){
@@ -27,7 +28,7 @@ var index = {
       }
     }
   },
-	banner: function(){
+	banner: function(){//轮播
     var first = $(".banner .swiper-slide").eq(0)
     var src = first.attr("data-src");
     first.css("background","url("+src+") no-repeat center center / auto 100%");
@@ -45,5 +46,39 @@ var index = {
         })
       }
     });
-	}
+  },
+  photoList: function(){
+    var _this = this;
+    //打开相册
+    $("#gallery").click(function(){
+      _this.photoListInit();
+      $(".photoWrap").show();
+    })
+    //关闭窗口
+    $('.photoWrap,.cancle').click(function(event){
+      $(".photoWrap").hide();
+    });
+    $('.photoWrap .wrap').click(function(event){
+      event.preventDefault();
+      event.stopPropagation();
+    });
+  },
+  photoListInit: function(){
+    var mySwiper = new Swiper('.photoList',{//swiper初始化
+      slidesPerView : 5,
+      spaceBetween: 20
+    });
+    $('.swiper-button-prev').click(function(){
+      mySwiper.swipePrev(); 
+    })
+    $('.swiper-button-next').click(function(){
+      mySwiper.swipeNext(); 
+    });
+    $(".swiper-slide").click(function(){
+      $(this).addClass("on").siblings().removeClass("on");
+      let src = $(this).find("img").attr("src")
+      console.log(src)
+      $(".showImg img").attr("src",src)
+    })
+  }
 }
