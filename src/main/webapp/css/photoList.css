@@ -158,8 +158,8 @@
 }
 .photoWrap .wrap .cancle {
   position: absolute;
-  right: -16px;
-  top: -16px;
+  right: 5px;
+  top: 0;
   width: 32px;
   height: 32px;
   background: url(../images/sprite/cancle.png) no-repeat center center;
