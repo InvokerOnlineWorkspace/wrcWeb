@@ -38,9 +38,10 @@ var destination = {
   },
   map: function(){
     $(".banner li").mouseover(function(){
+      var pos = $(this).attr("position")
       console.log()
       if($(".dom-title").length == 0){
-        $(this).find("a").append("<div class='dom-title'><h2>古巴</h2></div>")
+        $(this).find("a").append("<div class='dom-title'><h2>" + pos + "</h2></div>")
       }
     }).mouseout(function(){
       $(".dom-title").remove();
