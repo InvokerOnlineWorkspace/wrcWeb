@@ -436,4 +436,23 @@ h6 {
 .title ul li:nth-child(4n + 4) {
   background: #01955e;
 }
+.consult {
+  background: #34b3f5;
+  width: 81px;
+  height: 81px;
+  border-radius: 4px;
+  position: fixed;
+  right: 0;
+  bottom: 200px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+.consult img {
+  margin-top: 10px;
+}
+.consult p {
+  margin-top: 10px;
+  font-size: 14px;
+}
 .advplace-title{background-position:0px 0px}.advplace-title{background-image: url(../images/sprite/common_z.png)}
