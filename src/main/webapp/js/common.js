@@ -65,5 +65,12 @@ Echo.init({//懒加载
 　  throttle: 0 //图片延时多少毫秒加载
 }); 
 
-
-
+common = {
+  //在线联系
+  consult : function(){
+    console.log("123")
+    $("body").append(
+      '<div class="consult"><img src="../images/sprite/liuyan.png" alt=""><p>在线咨询</p></div>'
+    )
+  }
+}
