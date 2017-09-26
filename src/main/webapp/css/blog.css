@@ -1,0 +1,29 @@
+.top {
+  border-bottom: 1px solid #efefef;
+}
+.list {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #efefef;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.09);
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+.blog-title {
+  text-align: center;
+}
+.blog-title h2 {
+  font-size: 28px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+.main img {
+  margin: 20px 0;
+}
+.main p {
+  font-size: 16px;
+  color: #555;
+  line-height: 26px;
+}
