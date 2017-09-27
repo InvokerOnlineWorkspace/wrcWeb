@@ -36,58 +36,39 @@
 .over {
   background: none;
 }
-.title {
+.title-paln {
   overflow: hidden;
   width: 100%;
   height: 120px;
-  text-align: left;
   background: #0162AE;
+  color: #fff;
 }
-.title .wrap {
-  background: url(../images/planListDetail/title_bg.jpg) no-repeat center right;
+.title-paln .wrap {
   height: 100%;
-}
-.title h2 {
-  color: #ffffff;
-  font-size: 30px;
-  line-height: 70px;
-  font-weight: normal;
-  text-align: left;
-}
-.title h2 span {
-  margin-left: 10px;
-  font-size: 24px;
-  font-weight: 100;
-}
-.title ul {
   overflow: hidden;
-  margin: 0 auto;
-  display: inline-block;
 }
-.title ul li {
+.title-paln .wrap h2 {
   float: left;
-  color: #ffffff;
-  padding: 0;
-  line-height: 34px;
-  font-size: 18px;
-  font-weight: 300;
-  text-align: center;
-  margin-left: 10px;
+  font-size: 30px;
+  width: 660px;
+  line-height: 120px;
 }
-.title ul li:first-child {
-  margin-left: 0;
+.title-paln .wrap .label {
+  float: left;
+  width: 160px;
+  line-height: 120px;
 }
-.title ul li:nth-child(4n + 1) {
-  background: #8e5971;
+.title-paln .wrap .dateSelect {
+  margin-top: 15px;
+  float: left;
 }
-.title ul li:nth-child(4n + 2) {
-  background: #3f9ab1;
+.title-paln .wrap .dateSelect li {
+  margin: 10px 0;
+  padding-left: 20px;
+  background: url(../images/sprite/select.png) no-repeat 0 0;
 }
-.title ul li:nth-child(4n + 3) {
-  background: #664fb9;
-}
-.title ul li:nth-child(4n + 4) {
-  background: #01955e;
+.title-paln .wrap .dateSelect .on {
+  background: url(../images/sprite/selected.png) no-repeat 0 0;
 }
 .content {
   overflow: hidden;
@@ -190,7 +171,6 @@
   width: 206px;
   text-align: center;
   font-size: 16px;
-  cursor: pointer;
 }
 .main .f-l .select-title li:first-child {
   margin-left: 0;
@@ -199,8 +179,20 @@
   color: #0262ae;
   background: #ffffff;
 }
+.main .f-l .select-title .to_book {
+  float: right;
+  color: #ffffff;
+  font-size: 14px;
+  width: 100px;
+  text-align: center;
+  border-radius: 100px;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 3px;
+  background: #6bb9f1;
+  cursor: pointer;
+}
 .main .f-l .main-content {
-  display: none;
   border: 1px solid #e5e5e5;
   border-top: 0;
   padding: 20px;
@@ -241,22 +233,22 @@
   border-bottom: 18px solid transparent;
 }
 .main .f-l .main-content .main-title:nth-child(4n + 1) {
-  background: #8e5971;
+  background: #d96a43;
 }
 .main .f-l .main-content .main-title:nth-child(4n + 1):before {
-  border-right: 10px solid #8e5971;
+  border-right: 10px solid #d96a43;
 }
 .main .f-l .main-content .main-title:nth-child(4n + 2) {
-  background: #3f9ab1;
+  background: #33bae2;
 }
 .main .f-l .main-content .main-title:nth-child(4n + 2):before {
-  border-right: 10px solid #3f9ab1;
+  border-right: 10px solid #33bae2;
 }
 .main .f-l .main-content .main-title:nth-child(4n + 3) {
-  background: #664fb9;
+  background: #cb53b0;
 }
 .main .f-l .main-content .main-title:nth-child(4n + 3):before {
-  border-right: 10px solid #664fb9;
+  border-right: 10px solid #cb53b0;
 }
 .main .f-l .main-content .main-title:nth-child(4n + 4) {
   background: #01955e;
@@ -412,8 +404,106 @@
   padding: 0;
   padding-left: 5px;
 }
-.main .f-l .on {
+.main .f-l .planList h2 {
+  height: 35px;
+  line-height: 35px;
+  color: #ffffff;
+  font-size: 16px;
+  background: #108edd;
+  padding-left: 15px;
+}
+.main .f-l .planList .p-content {
+  position: relative;
+  padding: 25px;
+}
+.main .f-l .planList .p-content:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
   display: block;
+  width: 100%;
+  height: 100%;
+  background: #68c4f7;
+  filter: alpha(opacity=70);
+  /* IE */
+  -moz-opacity: 0.7;
+  /* 老版Mozilla */
+  -khtml-opacity: 0.7;
+  /* 老版Safari */
+  opacity: 0.7;
+  /* 支持opacity的浏览器*/
+  z-index: -1;
+  background: url(../images/planListDetail/data/data14.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.main .f-l .planList .p-content ul li h3 {
+  background: #108edd;
+  width: 80px;
+  height: 30px;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 30px;
+  color: #ffffff;
+}
+.main .f-l .planList .p-content ul li div {
+  position: relative;
+  border-left: 2px solid #108edd;
+  margin: 2px 0;
+  margin-left: 40px;
+  padding: 15px 0;
+}
+.main .f-l .planList .p-content ul li:last-child div:after {
+  content: "";
+  position: absolute;
+  left: -7px;
+  bottom: -10px;
+  display: block;
+  width: 7px;
+  height: 7px;
+  border: 3px solid #108edd;
+  border-radius: 100%;
+}
+.main .f-l .planList .p-content ul li p {
+  position: relative;
+  margin-left: 40px;
+  color: #555;
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 10px 15px;
+  line-height: 24px;
+  overflow: hidden;
+}
+.main .f-l .planList .p-content ul li p:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #68c4f7;
+  filter: alpha(opacity=70);
+  /* IE */
+  -moz-opacity: 0.7;
+  /* 老版Mozilla */
+  -khtml-opacity: 0.7;
+  /* 老版Safari */
+  opacity: 0.7;
+  /* 支持opacity的浏览器*/
+  z-index: -1;
+}
+.main .f-l .planList .p-content .msg {
+  width: 530px;
+  height: 35px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  font-size: 14px;
+  border-radius: 100px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background: #108edd;
 }
 .main .f-r {
   width: 320px;

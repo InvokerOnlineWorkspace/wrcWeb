@@ -28,6 +28,9 @@ body {
   -webkit-text-size-adjust: 100%;
   color: #333333;
 }
+textarea {
+  font-family: "Microsoft YaHei";
+}
 a {
   color: #2d374b;
   text-decoration: none;
@@ -473,5 +476,141 @@ h6 {
 .consultBox .img img {
   width: 70px;
   margin: 10px 0;
+}
+.bookWrap {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}
+.bookWrap:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: -1;
+  filter: alpha(opacity=50);
+  /* IE */
+  -moz-opacity: 0.5;
+  /* 老版Mozilla */
+  -khtml-opacity: 0.5;
+  /* 老版Safari */
+  opacity: 0.5;
+  /* 支持opacity的浏览器*/
+}
+.bookWrap .book {
+  position: absolute;
+  left: 50%;
+  margin-left: -420px;
+  top: 50%;
+  margin-top: -260px;
+  bottom: 0;
+  width: 840px;
+  height: 540px;
+}
+.bookWrap .book:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: -1;
+  border-radius: 8px;
+  filter: alpha(opacity=70);
+  /* IE */
+  -moz-opacity: 0.7;
+  /* 老版Mozilla */
+  -khtml-opacity: 0.7;
+  /* 老版Safari */
+  opacity: 0.7;
+  /* 支持opacity的浏览器*/
+}
+.bookWrap .book h2 {
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  margin: 30px 0;
+}
+.bookWrap .book .form {
+  padding: 0 100px;
+}
+.bookWrap .book .form input {
+  display: block;
+  position: relative;
+  height: 40px;
+  box-sizing: border-box;
+  line-height: 40px;
+  border-radius: 8px;
+  padding-left: 20px;
+  border: 0;
+  font-size: 16px;
+}
+.bookWrap .book .form .info {
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.bookWrap .book .form .info > div {
+  position: relative;
+  float: right;
+  width: 295px;
+}
+.bookWrap .book .form .info > div:first-child {
+  float: left;
+}
+.bookWrap .book .form .info > div:after {
+  content: "*";
+  display: block;
+  position: absolute;
+  right: -18px;
+  top: 0;
+  color: red;
+  z-index: 9;
+  font-size: 20px;
+}
+.bookWrap .book .form .info > div input {
+  width: 100%;
+}
+.bookWrap .book .form .theme {
+  display: block;
+  margin-top: 30px;
+  width: 100%;
+}
+.bookWrap .book .form textarea {
+  padding: 15px;
+  box-sizing: border-box;
+  margin-top: 30px;
+  width: 100%;
+  font-size: 16px;
+  height: 130px;
+  border-radius: 8px;
+}
+.bookWrap .book-btn {
+  width: 390px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.bookWrap .book-btn > div {
+  float: left;
+  width: 175px;
+  height: 40px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+.bookWrap .book-btn .book-sub {
+  background: #33bae2;
+}
+.bookWrap .book-btn .book-close {
+  margin-left: 30px;
+  background: #818181;
 }
 .advplace-title{background-position:0px 0px}.advplace-title{background-image: url(../images/sprite/common_z.png)}

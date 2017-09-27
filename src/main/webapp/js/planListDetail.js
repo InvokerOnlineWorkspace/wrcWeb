@@ -15,7 +15,8 @@ var planListDetail = {
 	 */
 	init: function(){
     this.banner();
-    this.changeContent();
+    // this.changeContent();
+    this.select();
 	},
 	banner: function(){
     var mySwiper = new Swiper('.pagenav',{//swiper初始化
@@ -40,6 +41,11 @@ var planListDetail = {
       console.log($(".main-content")[index])
       $(this).addClass("on").siblings().removeClass("on")
       $(".main-content").eq(index).addClass("on").siblings().removeClass("on")
+    })
+  },
+  select: function(){
+    $(".dateSelect li").click(function(){
+      $(this).addClass("on").siblings().removeClass("on");
     })
   }
 }

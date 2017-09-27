@@ -85,15 +85,18 @@ common = {
       console.log($(".consultBox"))
       $(".consultBox").slideToggle();
     })
-
-  //   <div class="consultWrap">
-  //   <div class="consult"><img src="../images/sprite/liuyan.png" alt=""><p>在线咨询</p></div>
-  //   <div class="consultBox">
-  //     <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=739855060&site=qq&menu=yes">
-  //       <img border="0" src="http://wpa.qq.com/pa?p=2:739855060:41" alt="点击这里给我发消息" title="点击这里给我发消息"/>
-  //     </a>
-  //     <div class="img"><img src="../images/sprite/qqcode.png" alt=""></div>
-  //   </div>
-  // </div>
+  },
+  //预约
+  book: function(){
+    $(".book").click(function(e){
+      e.stopPropagation()
+    })
+    $(".bookWrap,.book-close").click(function(e){
+      console.log(123)
+      $(".bookWrap").hide();
+    })
+    $(".btn-book").click(function(){
+      $(".bookWrap").show();
+    })
   }
 }
