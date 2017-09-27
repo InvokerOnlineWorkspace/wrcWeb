@@ -1,0 +1,81 @@
+.f-l {
+  float: left;
+}
+.f-r {
+  float: right;
+}
+.o-h {
+  overflow: hidden;
+}
+.mr12 {
+  margin-right: 12px;
+}
+.overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.clearfix:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  /* 触发 hasLayout */
+  zoom: 1;
+}
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+.lazy {
+  background: url(../images/sprite/loading.gif) no-repeat center center;
+}
+.over {
+  background: none;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  text-align: center;
+  overflow: hidden;
+}
+.banner img {
+  position: absolute;
+  margin-left: -960px;
+  top: 0;
+  left: 50%;
+}
+.main {
+  padding-top: 30px;
+}
+.main .photo-title {
+  font-size: 24px;
+  line-height: 40px;
+  color: #6c6c6c;
+}
+.main .photo {
+  margin-top: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 30px;
+  overflow: hidden;
+}
+.main .photo li {
+  padding: 15px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0px 4px #999;
+  margin-bottom: 20px;
+}
+.main .photo li img {
+  width: 100%;
+  height: 100%;
+}
+.main .photo .f-l {
+  width: 490px;
+}
+.main .photo .f-l:last-child {
+  margin-left: 20px;
+}
