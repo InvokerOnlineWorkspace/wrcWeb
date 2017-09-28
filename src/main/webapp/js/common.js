@@ -70,8 +70,7 @@ common = {
   consult : function(){
     console.log("123")
     $("body").append(
-      '<div class="consult"><img src="../images/sprite/liuyan.png" alt=""><p>在线咨询</p></div>'
-      +'<div class="consultWrap">'
+      '<div class="consultWrap">'
       +'<div class="consult"><img src="../images/sprite/liuyan.png" alt=""><p>在线咨询</p></div>'
       +'<div class="consultBox">'
           +'<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=739855060&site=qq&menu=yes">'

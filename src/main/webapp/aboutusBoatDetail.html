@@ -73,7 +73,7 @@
       <div class="cir">
         可容纳10人
       </div>
-      <a href="">立即预约</a>
+      <a class="btn-book">立即预约</a>
     </div>
   </div>
   <!-- main END-->
@@ -118,6 +118,26 @@
 </div>
   </div>
   <!-- 目的地 END-->
+  <!-- book -->
+  <div class="bookWrap">
+  <div class="book">
+    <h2>立即预约</h2>
+    <div class="form">
+      <div class="info clearfix">
+        <div><input type="text" placeholder="姓名"></div>
+        <div><input type="number" placeholder="联系电话"></div>
+      </div>
+      <input class="theme" type="text" placeholder="活动主题">
+      <textarea name="" id="" cols="30" rows="10" placeholder="您的其他情况"></textarea>
+    </div>
+    <div class="book-btn">
+      <div class="book-sub">提交</div>
+      <div class="book-close">关闭</div>
+    </div>
+  </div>
+</div>
+
+  <!-- book END-->
   <!-- 底部 -->
   <div class="footer">
   <div class="wrap o-h">
@@ -159,8 +179,10 @@
 </div>
   <!-- 底部 End-->
   <script src="js/libs/jquery/dist/jquery.min.js"></script>
+  <script src="js/common.js"></script>
   <script src="js/aboutusBoatDetail.js"></script>
   <script>
+    common.book();
     aboutusBoatDetail.init();
   </script>
 </body>
