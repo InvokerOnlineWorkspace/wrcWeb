@@ -87,15 +87,63 @@ common = {
   },
   //预约
   book: function(){
-    $(".book").click(function(e){
+    $(".book").click(function(e){//阻止冒泡
       e.stopPropagation()
     })
-    $(".bookWrap,.book-close").click(function(e){
-      console.log(123)
+    $(".bookWrap,.book-close").click(function(e){//关闭预约窗口
       $(".bookWrap").hide();
     })
-    $(".btn-book").click(function(){
+    $(".btn-book").click(function(){//打开预订窗口
       $(".bookWrap").show();
     })
+    $("#book-tel").change(function(){//电话号码验证
+      var val = $(this).val()
+      telCheck(val);
+    })
+    $(".book-sub").click(function(){
+      check(function(){
+        // $(".bookWrap").hide();//关闭窗口
+        // ajax
+        // ajax(function(){
+        //   success();
+        // })
+        // success后执行
+        success();
+        function success(){
+          $(".dialog").show()
+          setTimeout(function(){
+            $(".bookWrap").hide();//关闭窗口
+            $(".dialog").hide()
+          },1000)
+        }
+      })
+    })
+    var check = function(callback){
+      if($("#book-name").val() == ""){
+        warn("请输入姓名")
+        return false;
+      }else if($("#book-tel").val() == ""){
+        warn("请输入手机号")
+        return false;
+      }else if(telCheck($("#book-tel").val())){
+        callback();
+        return true;
+      }
+    }
+    var warn = function(msg){//警示语
+      $(".book-warn").html(msg);
+    }
+    var telCheck = function(val){//电话号码校验
+      if(!(/^1[3|4|5|8][0-9]\d{4,8}$/.test(val))){ 
+        warn("请输入合法手机号");
+        return false
+      }else if(val.length != 11){
+        warn("请输入11位手机号码");
+        return false
+      }else{
+        warn("")
+        return true
+      }
+    }
   }
 }
