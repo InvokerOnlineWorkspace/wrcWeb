@@ -76,7 +76,14 @@ common = {
           +'<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=739855060&site=qq&menu=yes">'
           +'<img border="0" src="http://wpa.qq.com/pa?p=2:739855060:41" alt="点击这里给我发消息" title="点击这里给我发消息"/>'
           +'</a>'
-          +'<div class="img"><img src="../images/sprite/qqcode.png" alt=""></div>'
+          +'<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=739855060&site=qq&menu=yes">'
+          +'<img border="0" src="http://wpa.qq.com/pa?p=2:739855060:41" alt="点击这里给我发消息" title="点击这里给我发消息"/>'
+          +'</a>'
+          +'<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=739855060&site=qq&menu=yes">'
+          +'<img border="0" src="http://wpa.qq.com/pa?p=2:739855060:41" alt="点击这里给我发消息" title="点击这里给我发消息"/>'
+          +'</a>'
+
+          // +'<div class="img"><img src="../images/sprite/qqcode.png" alt=""></div>'
         +'</div>'
       +'</div>'
     )
