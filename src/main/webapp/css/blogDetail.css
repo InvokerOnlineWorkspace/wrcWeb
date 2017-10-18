@@ -1,0 +1,48 @@
+.top {
+  border-bottom: 1px solid #efefef;
+}
+.content {
+  overflow: hidden;
+}
+.main {
+  border: 1px solid #efefef;
+  margin-top: 20px;
+  box-shadow: 0 1px 30px #ddd;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.main-title {
+  font-size: 26px;
+  font-weight: bold;
+  padding: 20px 0;
+}
+.main-title span {
+  float: right;
+  color: #999;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 50px;
+}
+.text img {
+  display: block;
+  margin: 10px 0;
+  max-width: 100%;
+}
+.text p {
+  font-size: 16px;
+  line-height: 24px;
+}
+.page {
+  overflow: hidden;
+  padding: 0 20px;
+  padding-top: 20px;
+}
+.page a {
+  font-size: 24px;
+}
+.page .last {
+  float: left;
+}
+.page .next {
+  float: right;
+}
