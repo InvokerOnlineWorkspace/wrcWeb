@@ -132,6 +132,9 @@ common = {
       }else if($("#book-tel").val() == ""){
         warn("请输入手机号")
         return false;
+      }else if($("#book-email").val() == ""){
+        warn("邮箱")
+        return false;
       }else if(telCheck($("#book-tel").val())){
         callback();
         return true;
@@ -154,3 +157,36 @@ common = {
     }
   }
 }
+dialog = {
+  init: function(param){
+    var dom = $('<div class="dialog"><div class="msg">'+param.msg+'</div>'
+    +'<div class="btn-d"><a class="sure">确定</a><a class="cancel">取消</a></div></div>');
+    $('body').append(dom);
+    $('.cancel').click(function(){
+      $('.dialog').hide();
+    })
+    $('.dialog .sure').click(function(){
+      $('.dialog').hide();
+    })
+  },
+  show: function(param){
+    this.init(param);
+  },
+  hide: function(){
+    $('.dialog').hide();
+  },
+  sure: function(callback){
+    $('.dialog .sure').click(function(){
+      if(callback){
+        callback();
+      }
+      $('.dialog').hide();
+    })
+  }
+}
+
+
+// dialog.show({msg:  "error: 502！"});
+// dialog.sure(function(){
+//   alert("123")
+// })

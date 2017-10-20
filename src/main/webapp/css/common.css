@@ -561,11 +561,12 @@ input {
 }
 .bookWrap .book .form .info > div {
   position: relative;
-  float: right;
-  width: 295px;
+  float: left;
+  width: 193px;
+  margin-left: 30px;
 }
 .bookWrap .book .form .info > div:first-child {
-  float: left;
+  margin-left: 0;
 }
 .bookWrap .book .form .info > div:after {
   content: "*";
@@ -642,5 +643,48 @@ input {
   text-align: center;
   font-size: 18px;
   color: #555;
+}
+.dialog {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -75px;
+  width: 300px;
+  height: 150px;
+  border: 1px solid #ddd;
+  z-index: 99;
+  background: #fff;
+  border-radius: 4px;
+}
+.msg {
+  text-align: center;
+  font-size: 16px;
+  height: 90px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.btn-d {
+  height: 60px;
+  text-align: center;
+}
+.btn-d a {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 18px;
+  height: 35px;
+  line-height: 35px;
+  padding: 0 15px;
+  border-radius: 4px;
+  color: #666;
+}
+.btn-d a:hover {
+  background: #efefef;
+  color: #333;
+}
+.btn-d .sure {
+  margin-right: 20px;
 }
 .advplace-title{background-position:0px 0px}.advplace-title{background-image: url(../images/sprite/common_z.png)}
